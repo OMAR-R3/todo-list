@@ -5,12 +5,30 @@
     font-family: 'Times New Roman', Times, serif;
 }
 
+html, body {
+    height: 100%;
+    margin: 0;
+}
 body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
     background: #e6e6e6;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    flex: 9;
+}
+footer{
+    background: #e6e6e6;
+    text-align: center;
+    flex: 1;
+}
+footer h2{
+    font-size: 18px;
+    padding-top: 50px;
 }
 
 .box {
@@ -47,6 +65,9 @@ body {
     border: 1px solid transparent;
     text-align: center;
     padding: 5px;
+}
+.form table input{
+    text-align: center;
 }
 
 .table {
@@ -108,5 +129,4 @@ table tr {
     margin-right: auto;
     margin-bottom: 0;
     margin-left: auto;
-
 }

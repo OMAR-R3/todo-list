@@ -13,67 +13,79 @@
 
 <body>
     <main>
-        <div class="box">
-            <h2>Lista de actividades en menos de 3 horas 👌</h2>
-            <div class="form">
-                <form action="" method="">
+        <section>
+            <div class="box">
+                <h2>Lista de actividades en menos de 3 horas 👌</h2>
+                <div class="form">
+                    <form action="" method="" id="form">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th><label for="tarea">Tarea</label></th>
+                                    <th>Prioridad</th>
+                                    <th>Fecha de inicio</th>
+                                    <th>Fecha de fin</th>
+                                    <th>Estado</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><input type="text" id="tarea" name="tarea"></td>
+                                    <td>
+                                        <select id="prioridad" name="prioridad">
+                                            <option value="">Selecciona</option>
+                                            <option value="Pendiente">Baja</option>
+                                            <option value="En proceso">Media</option>
+                                            <option value="Completada">Alta</option>
+                                        </select>
+                                    </td>
+                                    <td><input type="date" id="fechaI" name="fechaI"></td>
+                                    <td><input type="date" id="fechaF" name="fechaF"></td>
+                                    <td>
+                                        <select id="estado" name="estado">
+                                            <option value="">Selecciona</option>
+                                            <option value="Pendiente">Pendiente</option>
+                                            <option value="En proceso">En proceso</option>
+                                            <option value="Completada">Completada</option>
+                                        </select>
+                                    </td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                        <button class="guardar" type="submit">Guardar Tarea</button>
+                    </form>
+                </div>
+                <div class="table">
                     <table>
                         <thead>
                             <tr>
-                                <th><label for="tarea">Tarea</label></th>
+                                <th>Tarea</th>
                                 <th>Prioridad</th>
                                 <th>Fecha de inicio</th>
                                 <th>Fecha de fin</th>
                                 <th>Estado</th>
+                                <th>Eliminar</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td><input type="text" id="tarea" name="tarea"></td>
-                                <td><input type="text" id="prioridad" name="prioridad"></td>
-                                <td><input type="text" id="fechaI" name="fechaI"></td>
-                                <td><input type="text" id="fechaF" name="fechaF"></td>
-                                <td><input type="text" id="estado" name="estado"></td>
+                                <td>Prueba</td>
+                                <td>Prueba</td>
+                                <td>Prueba</td>
+                                <td>Prueba</td>
+                                <td>Prueba</td>
+                                <td>
+                                    <button class="delete"><i class="icon">🗑️</i></button>
+                                </td>
                             </tr>
                         </tbody>
                     </table>
-                    <button class="guardar" type="submit">Guardar Tarea</button>
-                </form>
+                </div>
             </div>
-            <div class="table">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Tarea</th>
-                            <th>Prioridad</th>
-                            <th>Fecha de inicio</th>
-                            <th>Fecha de fin</th>
-                            <th>Estado</th>
-                            <th>Eliminar</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Prueba</td>
-                            <td>Prueba</td>
-                            <td>Prueba</td>
-                            <td>Prueba</td>
-                            <td>Prueba</td>
-                            <td>
-                                <button class="delete"><i class="icon">🗑️</i></button>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
+        </section>
     </main>
-    <!--
-    <footer>
-        <p>© 2026 Derechos reservados a José Omar García Cruz</p>
-    </footer>
-    -->
-
+    <footer><h2>Derechos Reservados 2026</h2></footer>
 </body>
 
 </html>
